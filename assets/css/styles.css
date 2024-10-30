@@ -1,0 +1,190 @@
+
+
+#holiday-occupation {
+  position:relative;
+}
+
+.lds-ellipsis {
+  display: none;
+  position: absolute;
+  width: 64px;
+  height: 64px;
+  top:18px;
+  left:50%;
+  transform:translateX(-50%) translateY(-50%);
+}
+.js-loading .lds-ellipsis { 
+  display:block;
+}
+.lds-ellipsis div {
+  position: absolute;
+  top: 27px;
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+  background: #FFF;
+  animation-timing-function: cubic-bezier(0, 1, 1, 0);
+}
+.lds-ellipsis div:nth-child(1) {
+  left: 6px;
+  animation: lds-ellipsis1 0.6s infinite;
+}
+.lds-ellipsis div:nth-child(2) {
+  left: 6px;
+  animation: lds-ellipsis2 0.6s infinite;
+}
+.lds-ellipsis div:nth-child(3) {
+  left: 26px;
+  animation: lds-ellipsis2 0.6s infinite;
+}
+.lds-ellipsis div:nth-child(4) {
+  left: 45px;
+  animation: lds-ellipsis3 0.6s infinite;
+}
+@keyframes lds-ellipsis1 {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes lds-ellipsis3 {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0);
+  }
+}
+@keyframes lds-ellipsis2 {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(19px, 0);
+  }
+}
+
+
+.holiday-occupation {
+    max-width:400px;
+}
+
+.calendar__info { 
+    font-size:14px;
+}
+
+#calender_occupy {
+  font-size:16px;
+  line-height:1.2;
+  margin-bottom:1rem;
+}
+.table--calender {
+  border:0; 
+  max-width:400px;
+  width:100%;
+  padding-top: 6px;
+  margin-top: -1px;
+  background: #F9F9F9;
+}
+.calenderHeader {
+  max-width: 400px;
+  width:100%;
+  background:#DDD;
+  height:38px;
+  font-weight: bold;
+}
+.calenderHeader::after {
+    content:' ';
+    display:table;
+    clear:both;
+}
+.table--calender .calenderHeader * { 
+  color: #FFF;
+  text-decoration: none;
+}
+#linkPrev_control, #linkNext_control, #pnlNow_control div,
+#linkPrevFrom_control, #linkNextFrom_control, #pnlNowFrom_control div,
+#linkPrevTo_control, #linkNextTo_control, #pnlNowTo_control div {
+  float:left;
+  text-align: center;
+  width:20%;
+  height:38px;
+  line-height:38px;
+}
+.updateCal {
+  display:inline-block;
+  width:100%;
+  height:100%;
+  text-decoration:none;
+}
+.table--calender a {
+  color:#FFF;
+}
+#pnlNow_control div, #pnlNowTo_control div { 
+  width: 60%;
+}
+
+.table--calender tr:first-child th {
+  padding-top: 18px;
+}
+.table--calender tr:last-child td {
+  padding-bottom: 10px;
+}
+
+.table--calender tr th {
+  padding-top: 5px;
+}
+.table--calender tr td, 
+.table--calender tr th {
+  background:none !important;
+  padding:6px 0;
+  border-left:1px solid #DDD;
+  color:#666;
+  text-align: center;
+}
+
+
+#pnlCalenderListing tr:nth-child(3) td, 
+#pnlCalender table tr:nth-child(2) td {
+  padding-top:16px;
+} 
+
+.table--calender tr td:first-child, 
+.table--calender tr th:first-child {
+  border-left:0;
+}
+#calender table tr th {
+  border-bottom:1px solid #DDD;
+} 
+table tr td span, 
+.table--calender tr td.past span,
+.table--calender tr td.booked span {
+    border-radius: 50%;
+    display: inline-block;
+    height: 2em;
+    padding: 5px 4px 4px;
+    text-align: center;
+    width: 2em;
+    line-height:1.4;
+}
+
+.table--calender tr td.booked span {
+    background:#EEE;
+}
+.table--calender tr td.today span {
+    color:#000;
+    font-weight:bold;
+}
+
+.table--calender tr td.past span {
+  color:#999;
+  background:none;
+}
+table tr td span {
+  border:0;
+  border-radius:none;
+}
+
+
